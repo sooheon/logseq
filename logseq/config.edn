@@ -1,5 +1,4 @@
-
-  {:journal-basis "daily" 
+{:journal-basis "daily" 
 
  :project {
            ;; Selected public notes can be published to https://logseq.com/your-project-or-your-username.
@@ -54,7 +53,7 @@
     :collapsed? false}
    {:title "📅 NEXT"
     :query [:find (pull ?h [*])
-            :in $ ?start ?next
+            :in $ ?start ohhh ?next
             :where
             [?h :block/marker ?marker]
             [?h :block/ref-pages ?p]
